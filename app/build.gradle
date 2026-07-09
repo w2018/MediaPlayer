@@ -32,8 +32,10 @@ android {
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            // Use release signing if configured, otherwise fall back to debug
-            signingConfig signingConfigs.release.storeFile != null ? signingConfigs.release : signingConfigs.debug
+            // Only sign if release keystore is configured; otherwise output unsigned APK for CI to sign
+            if (signingConfigs.release.storeFile != null) {
+                signingConfig signingConfigs.release
+            }
         }
     }
 

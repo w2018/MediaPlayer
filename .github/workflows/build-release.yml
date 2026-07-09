@@ -47,6 +47,14 @@ jobs:
           ALIGNED="${UNSIGNED/-unsigned/-aligned}"
           SIGNED="${UNSIGNED/-unsigned/}"
 
+          # Verify unsigned APK exists
+          if [ ! -f "$UNSIGNED" ]; then
+            echo "ERROR: Unsigned APK not found at $UNSIGNED"
+            echo "Available files:"
+            ls -la app/build/outputs/apk/release/
+            exit 1
+          fi
+
           # Create debug keystore if not exists
           KEYSTORE="$HOME/.android/debug.keystore"
           if [ ! -f "$KEYSTORE" ]; then
@@ -69,6 +77,7 @@ jobs:
             --out "$SIGNED" "$ALIGNED"
 
           echo "Signed APK: $SIGNED"
+          ls -la "$SIGNED"
 
       - name: Upload APK as artifact
         uses: actions/upload-artifact@v4
