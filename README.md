@@ -29,12 +29,6 @@
 - **删除**：二次确认 + 系统授权的安全删除
 - **分享**：通过系统分享面板发送文件
 
-## 📸 界面预览
-
-<!-- TODO: 添加截图 -->
-<!-- ![主界面](screenshots/main.png) -->
-<!-- ![播放界面](screenshots/player.png) -->
-
 ## 🏗️ 技术架构
 
 | 类别 | 技术选型 |
@@ -121,19 +115,6 @@ shareIntent.setType("audio/*");
 shareIntent.putExtra(Intent.EXTRA_STREAM, audioUri);
 shareIntent.setPackage("com.reasonix.mediaplayer");
 startActivity(Intent.createChooser(shareIntent, "分享音频"));
-```
-
-## 🔄 CI/CD
-
-推送 `v*` tag 时自动触发 GitHub Actions：
-1. 编译 Release APK（R8 混淆 + 资源缩减）
-2. zipalign 对齐 + apksigner 签名
-3. 自动创建 GitHub Release 并上传签名 APK
-
-```bash
-# 发布新版本
-git tag v1.0.0
-git push origin v1.0.0
 ```
 
 ## 📄 开源协议
