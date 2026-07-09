@@ -22,7 +22,6 @@ app/build/
 
 # Local configuration file (sdk path, etc)
 local.properties
-gradle.properties
 
 # Signing files
 *.jks
