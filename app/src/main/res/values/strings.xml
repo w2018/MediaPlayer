@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">媒体播放器</string>
+
+    <!-- Tabs -->
+    <string name="tab_all">全部</string>
+    <string name="tab_video">视频</string>
+    <string name="tab_audio">音频</string>
+
+    <!-- Player -->
+    <string name="player_title">正在播放</string>
+    <string name="play">播放</string>
+    <string name="pause">暂停</string>
+    <string name="forward">快进</string>
+    <string name="backward">快退</string>
+
+    <!-- Empty state -->
+    <string name="empty_media">没有找到媒体文件</string>
+    <string name="no_permission">需要存储权限才能浏览媒体文件</string>
+    <string name="grant_permission">授予权限</string>
+
+    <!-- Details -->
+    <string name="detail_size">大小</string>
+    <string name="detail_duration">时长</string>
+    <string name="detail_path">路径</string>
+    <string name="detail_type">类型</string>
+    <string name="dialog_details">文件详情</string>
+    <string name="dialog_close">关闭</string>
+
+    <!-- Menu -->
+    <string name="menu_filter">筛选设置</string>
+    <string name="menu_properties">文件属性</string>
+    <string name="menu_rename">重命名</string>
+    <string name="menu_share">分享</string>
+    <string name="menu_delete">删除</string>
+
+    <!-- Properties dialog -->
+    <string name="props_title">文件属性</string>
+    <string name="props_name">文件名</string>
+    <string name="props_type">类型</string>
+    <string name="props_format">格式</string>
+    <string name="props_mime">MIME</string>
+    <string name="props_size">大小</string>
+    <string name="props_duration">时长</string>
+    <string name="props_resolution">分辨率</string>
+    <string name="props_date_added">添加时间</string>
+    <string name="props_path">完整路径</string>
+    <string name="props_id">MediaStore ID</string>
+
+    <!-- Filter dialog -->
+    <string name="filter_format_title">文件格式筛选</string>
+    <string name="filter_duration_title">最小时长筛选</string>
+    <string name="filter_duration_label">最小时长：%d 秒</string>
+    <string name="filter_duration_none">不限</string>
+    <string name="filter_custom_format_hint">自定义格式（如 webm）</string>
+    <string name="filter_current_format">当前格式：%s</string>
+    <string name="filter_current_duration">最小时长：%s</string>
+    <string name="filter_summary_format">格式: %s</string>
+    <string name="filter_summary_duration">时长 ≥ %ds</string>
+    <string name="filter_summary_active">已筛选</string>
+
+    <!-- Delete dialog -->
+    <string name="delete_title">确认删除</string>
+    <string name="delete_warning">⚠️ 此操作不可恢复！\n\n确定要删除「%s」吗？</string>
+    <string name="delete_confirm">删除</string>
+    <string name="delete_cancel">取消</string>
+    <string name="delete_success">已删除</string>
+    <string name="delete_failed">删除失败</string>
+
+    <!-- Rename dialog -->
+    <string name="rename_title">重命名</string>
+    <string name="rename_hint">输入新名称</string>
+    <string name="rename_confirm">确认</string>
+    <string name="rename_success">已重命名</string>
+    <string name="rename_failed">重命名失败</string>
+    <string name="rename_same_name">名称未改变</string>
+
+    <!-- Share -->
+    <string name="share_title">分享文件</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">播放控制</string>
+    <string name="notification_channel_desc">媒体播放控制通知</string>
+</resources>

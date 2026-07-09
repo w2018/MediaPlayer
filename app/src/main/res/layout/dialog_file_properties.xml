@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="24dp"
+    android:paddingTop="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 文件名 -->
+        <TextView
+            android:id="@+id/propsName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_marginBottom="12dp" />
+
+        <!-- 类型 -->
+        <include layout="@layout/props_row"
+            android:id="@+id/rowType" />
+
+        <!-- 格式 -->
+        <include layout="@layout/props_row"
+            android:id="@+id/rowFormat" />
+
+        <!-- MIME -->
+        <include layout="@layout/props_row"
+            android:id="@+id/rowMime" />
+
+        <!-- 大小 -->
+        <include layout="@layout/props_row"
+            android:id="@+id/rowSize" />
+
+        <!-- 时长 -->
+        <include layout="@layout/props_row"
+            android:id="@+id/rowDuration" />
+
+        <!-- 分辨率 -->
+        <include layout="@layout/props_row"
+            android:id="@+id/rowResolution" />
+
+        <!-- 添加时间 -->
+        <include layout="@layout/props_row"
+            android:id="@+id/rowDateAdded" />
+
+        <!-- 完整路径 -->
+        <include layout="@layout/props_row"
+            android:id="@+id/rowPath" />
+
+        <!-- MediaStore ID -->
+        <include layout="@layout/props_row"
+            android:id="@+id/rowId" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>

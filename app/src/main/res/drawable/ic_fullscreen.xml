@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="@android:color/white">
+    <!-- Fullscreen expand icon (4 corners) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M7,14L5,14L5,19L10,19L10,17L7.41,17L12,12.41L12,10L10,10L10,7L7,7L7,10L5,10L5,7C5,5.9 5.9,5 7,5L10,5L10,7L7.41,7L3,11.41L4.41,12.83L7,10.24L7,14Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M17,14L17,10.24L19.59,12.83L21,11.41L16.59,7L14,9.59L14,7L17,7L17,5L20,5C21.1,5 22,5.9 22,7L22,10L20,10L20,7L17.41,7L12,12.41L14.59,15L12,17.59L14.59,20L17,17.41L17,20L14,20L14,22L17,22C18.1,22 19,21.1 19,20L19,17L17,17L17,14Z" />
+</vector>
